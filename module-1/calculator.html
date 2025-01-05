@@ -5,18 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <!-- css link -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <div class="calculator">
+        <!-- display part of the calculator -->
         <div class="display" id="display"><input class="input" type="text" readonly />
         </div>
         <div class="buttons">
-
-            <button class="button" operator>C</button>
-            <button class="button" operator>Del</button>
-            <button class="button equals operator">=</button>
+            <!-- the buttons of the calculator with button class -->
+            <!-- added the operator class for buttons which are operators -->
+            <button class="button operator">C</button>
+            <button class="button operator">Del</button>
+            <button class="button equals operator">=</button> <!-- added equals class to change the buuton layout-->
 
             <button class="button">7</button>
             <button class="button">8</button>
@@ -33,13 +36,13 @@
             <button class="button">3</button>
             <button class="button operator">+</button>
 
-            <button class="button zero">0</button>
+            <button class="button zero">0</button><!-- added zero class to change the buuton layout-->
             <button class="button">.</button>
             <button class="button operator">-</button>
 
         </div>
     </div>
+    <!-- Js link -->
     <script src="script.js"></script>
 </body>
 </html>
-<!-- Test out other layouts and maybe put = below and play around with its sizing -->

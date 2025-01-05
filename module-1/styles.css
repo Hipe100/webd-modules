@@ -1,31 +1,40 @@
 body {
     font-family: Arial, sans-serif;
+    /* Centering the calculator and making it responsive for different screen sizes */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    /* background color */
     background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
 }
 
 .calculator {
+    /* size of the calculator */
     width: 300px;
-    border: 1px solid #ddd;
+    /* border along the calculator along with its color and shadow */
+    border: 6px solid #ddd;
+    background-color:#ddd ;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
 }
 
 .display {
+    /* color of the display part of the calculator */
     background-color:#2d2d2d;
+    /* color,font of the text inside the calculator */
     color: #fff;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: right;
     padding: 20px;
-    border-bottom: 1px solid #ddd;
+    /* the line dividing display and the buttons */
+    border-bottom: 6px solid #ddd;
 }
 
 .display .input {
+    /* the input shown in the display css most of which is inherited from display */
     background-color: inherit;
     color: inherit;
     font-size: inherit;
@@ -37,41 +46,53 @@ body {
     box-sizing: border-box;
 }
 .buttons {
+    /* a 4*5 grid containing the buttons  */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    /* Gap between the buttons */
     gap: 1px;
 }
 
 
 .button.equals,.button.zero {
+    /* makes the '=','0' button take space in 2 columns */
     grid-column: span 2;
 }
 .button {
+/* the font size*/
     font-size: 1.5rem;
     padding: 20px;
-    border: none;
-    border-radius: 5px;
+    /* the white border along withe rounding along the edges */
+    border: 3px solid #ddd;
+    border-radius: 10px;
+    /* changes the cursor into pointer when on the buttona */
     cursor: pointer;
+    /* the color of th buttom */
     background-color: #93c5fd;
+    /* the color of the text inside the button */
     color: #ffffff;
+    /* the transformation when on the button time */
     transition: background-color 0.3s ease, transform 0.1s ease;
 }
 
 .button:hover {
+    /* changes the color of the button to a darker shade when hivering over the button */
     background-color: #60a5fa;
 }
 
 .button:active {
+    /* changes the color to an even darker shade and give a clicking animation */
     background-color: #2563eb;
     transform: scale(0.95);
 }
 
 .operator {
+    /* gives a distinctive color to the operators */
     background-color: #2563eb;
     color: #ffffff;
 }
 .operator:hover {
+    /* changes the color when hivering over the operators */
     background-color: #1d4ed8;
 
 }
-/* Try changing the colors and try out the pink hue  */
