@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+.calculator {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.display {
+    background-color:#2d2d2d;
+    color: #fff;
+    font-size: 2rem;
+    text-align: right;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.display .input {
+    background-color: inherit;
+    color: inherit;
+    font-size: inherit;
+    border: none;
+    outline: none;
+    width: 100%;
+    text-align: right;
+    padding: 0;
+    box-sizing: border-box;
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+}
+
+
+.button.equals,.button.zero {
+    grid-column: span 2;
+}
+.button {
+    font-size: 1.5rem;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #93c5fd;
+    color: #ffffff;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.button:hover {
+    background-color: #60a5fa;
+}
+
+.button:active {
+    background-color: #2563eb;
+    transform: scale(0.95);
+}
+
+.operator {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+.operator:hover {
+    background-color: #1d4ed8;
+
+}
+/* Try changing the colors and try out the pink hue  */
